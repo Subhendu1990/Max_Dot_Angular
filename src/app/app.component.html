@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<img id="mainImage" class="mainContainer" src="/assets/sea.jpg" (load)="showDot()">
+<canvas id="myCanvas" class="mainContainer"></canvas>
+
+<div *ngIf="isImageLoaded" id="mainDotContainer" class="mainContainer">
+    <app-dot-container>
+      <app-dots></app-dots>
+    </app-dot-container>
+</div>
+
